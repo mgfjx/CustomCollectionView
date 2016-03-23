@@ -17,6 +17,7 @@
 		ECA414E91CA21B680056C436 /* CustomCollectionViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA414E81CA21B680056C436 /* CustomCollectionViewUITests.m */; };
 		ECA414FA1CA21B840056C436 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA414F71CA21B840056C436 /* CollectionViewController.m */; };
 		ECA414FB1CA21B840056C436 /* YFCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA414F91CA21B840056C436 /* YFCollectionViewLayout.m */; };
+		ECA4150E1CA246940056C436 /* GridrLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA4150D1CA246940056C436 /* GridrLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		ECA414F71CA21B840056C436 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 		ECA414F81CA21B840056C436 /* YFCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFCollectionViewLayout.h; sourceTree = "<group>"; };
 		ECA414F91CA21B840056C436 /* YFCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFCollectionViewLayout.m; sourceTree = "<group>"; };
+		ECA4150C1CA246940056C436 /* GridrLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridrLayout.h; sourceTree = "<group>"; };
+		ECA4150D1CA246940056C436 /* GridrLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridrLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				ECA414F71CA21B840056C436 /* CollectionViewController.m */,
 				ECA414F81CA21B840056C436 /* YFCollectionViewLayout.h */,
 				ECA414F91CA21B840056C436 /* YFCollectionViewLayout.m */,
+				ECA4150C1CA246940056C436 /* GridrLayout.h */,
+				ECA4150D1CA246940056C436 /* GridrLayout.m */,
 				ECA414CC1CA21B680056C436 /* Main.storyboard */,
 				ECA414CF1CA21B680056C436 /* Assets.xcassets */,
 				ECA414D11CA21B680056C436 /* LaunchScreen.storyboard */,
@@ -282,6 +287,7 @@
 			files = (
 				ECA414FB1CA21B840056C436 /* YFCollectionViewLayout.m in Sources */,
 				ECA414FA1CA21B840056C436 /* CollectionViewController.m in Sources */,
+				ECA4150E1CA246940056C436 /* GridrLayout.m in Sources */,
 				ECA414CB1CA21B680056C436 /* ViewController.m in Sources */,
 				ECA414C81CA21B680056C436 /* AppDelegate.m in Sources */,
 				ECA414C51CA21B680056C436 /* main.m in Sources */,
@@ -510,6 +516,7 @@
 				ECA414EF1CA21B680056C436 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ECA414F01CA21B680056C436 /* Build configuration list for PBXNativeTarget "CustomCollectionViewTests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +525,7 @@
 				ECA414F21CA21B680056C436 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ECA414F31CA21B680056C436 /* Build configuration list for PBXNativeTarget "CustomCollectionViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +534,7 @@
 				ECA414F51CA21B680056C436 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

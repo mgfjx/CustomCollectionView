@@ -8,6 +8,7 @@
 
 #import "CollectionViewController.h"
 #import "YFCollectionViewLayout.h"
+#import "GridrLayout.h"
 
 @interface CollectionViewController ()<UICollectionViewDataSource,UICollectionViewDelegate,YFCollectionViewLayoutDelegate>
 
@@ -32,7 +33,13 @@
     self.yfLayout.interItemSpacing = 10;
     self.yfLayout.delegate = self;
     
-    self.collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout];
+    GridrLayout *grid = [[GridrLayout alloc] init];
+    grid.itemSize = CGSizeMake(50, 50);
+    grid.interitemSpacing = 5;
+    grid.lineSpacing = 5;
+    grid.contentInset = UIEdgeInsetsMake(10, 0, 0, 100);
+    
+    self.collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:grid];
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
     
@@ -45,11 +52,11 @@
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
-    return 1;
+    return 100;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return 100;
+    return 10;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
@@ -62,11 +69,11 @@
     
 }
 
-- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(YFCollectionViewLayout *)layout heightForItemAtIndexPath:(NSIndexPath *)indexPath{
-    CGFloat randomHeight = 100 + arc4random()%140;
-    
-    return randomHeight;
-}
+//- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(YFCollectionViewLayout *)layout heightForItemAtIndexPath:(NSIndexPath *)indexPath{
+//    CGFloat randomHeight = 100 + arc4random()%140;
+//    
+//    return randomHeight;
+//}
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     
