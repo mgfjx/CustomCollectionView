@@ -32,7 +32,7 @@
     self.yfLayout.interItemSpacing = 10;
     self.yfLayout.delegate = self;
     
-    self.collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout];
+    self.collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:self.yfLayout];
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
     
