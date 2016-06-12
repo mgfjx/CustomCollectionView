@@ -217,6 +217,7 @@
 				TargetAttributes = {
 					ECA414BF1CA21B680056C436 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = KZ2AE2A82P;
 					};
 					ECA414D81CA21B680056C436 = {
 						CreatedOnToolsVersion = 7.1;
@@ -425,6 +426,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CustomCollectionView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xintong.CustomCollectionView;
@@ -436,6 +438,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CustomCollectionView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xintong.CustomCollectionView;
@@ -510,6 +513,7 @@
 				ECA414EF1CA21B680056C436 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ECA414F01CA21B680056C436 /* Build configuration list for PBXNativeTarget "CustomCollectionViewTests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +522,7 @@
 				ECA414F21CA21B680056C436 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ECA414F31CA21B680056C436 /* Build configuration list for PBXNativeTarget "CustomCollectionViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +531,7 @@
 				ECA414F51CA21B680056C436 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
