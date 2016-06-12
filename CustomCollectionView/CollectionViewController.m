@@ -26,7 +26,9 @@
     self.view.backgroundColor = [UIColor brownColor];
     
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-    layout.itemSize = CGSizeMake(50, 50);
+    layout.itemSize = CGSizeMake(30, 30);
+    layout.minimumLineSpacing = 5;
+    layout.minimumInteritemSpacing = 5;
     
     self.yfLayout = [[YFCollectionViewLayout alloc] init];
     self.yfLayout.numberOfColumns = 3;
@@ -78,7 +80,7 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     
     
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Title" message:@"Message" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil message:[NSString stringWithFormat:@"第%ld个",indexPath.row] preferredStyle:UIAlertControllerStyleAlert];
     
     UIAlertAction *action = [UIAlertAction actionWithTitle:@"action" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         
